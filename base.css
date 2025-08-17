@@ -1,0 +1,75 @@
+/* 共用 reset + 字體 */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  cursor:none;
+}
+
+@font-face {
+  font-family: 'Fontai';
+  src: url('./font/sf_shai_fontai/SF\ Shai\ Fontai\ Bold.ttf') format("truetype"),
+}
+@font-face {
+  font-family: 'TypeWriter';
+  src: url('./font/neobulletin/NeoBulletin_Limited_Free__Version.ttf') format("truetype"),
+}
+
+body {
+  font-family: 'TypeWriter', monospace;
+  scroll-behavior: smooth;
+}
+
+
+
+/*游標*/
+.inner-cursor{
+  position:fixed;
+  left:10px;
+  width:50px;
+  height:50px;
+  transform:translate(-50%,-50%);
+  background: white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s height 0.5s;
+  
+}
+.outer-cursor{
+  position:fixed;
+  left:10px;
+  width:60px;
+  height:60px;
+  transform:translate(-50%,-50%);
+  border: 1px solid white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  /* pointer-events: 0.1ms; chatgpt說這裡不該是時間的職*/
+  pointer-events: none; 
+  transition:0.1s;
+}
+
+
+
+/*頁面切換的濺入見出動畫*/
+.container{
+  margin:0px;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+/*配合js*/
+.container.visible{
+  opacity: 1;
+}
+
+
+
+/* 跟原本不一樣的地方
+html, body { 
+  margin:0; 
+  padding:0; 
+  scroll-behavior:smooth 
+} */
+

@@ -1,0 +1,25 @@
+/*about 頁面*/
+/*about.html*/
+p {
+  /* font-family: verdana; */
+  font-size: 20px;
+  color:#ff002b;
+  /* padding-left: 5%; */
+  margin: 10px 30px ;  /*上右下左 上下/左右*/
+  border: 10px; 
+  border:white solid;
+}
+
+
+form{
+    color:#7fffd4;
+    text-align: center;
+
+    max-width: 500px;
+    margin: 0 auto;
+    background:black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}   
+

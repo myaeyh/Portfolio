@@ -1,0 +1,98 @@
+body.page0 {
+    background-image: url("./img/bg.jpg");
+    background-repeat: repeat-x;
+    
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  }
+
+
+.top{
+    display:flex;
+    height: 200px; /*父容器沒有固定高度*/
+    /* margin:20px auto; */
+}
+ .top_left h1{
+  flex:90%;
+  font-size: clamp(2rem, 20vw, 10rem); /*最小2rem，最大4rem，跟螢幕寬度成比例*/
+  text-align:left;
+  padding-left: 100px;
+  white-space: nowrap; /* 避免換行 */
+  color:white;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family:"Fontai";
+ }
+
+.top_right{
+    display:flex;
+    flex:10%;
+    flex-direction: row;
+    justify-content: flex-end; /* 水平靠右 */
+    align-items:center;
+}
+
+.menubox{
+  position:sticky;
+  width:35px;
+  height:50px;
+  right:50px;
+}
+.menubox .icon{
+
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  /* position:fixed; */
+  border-radius: 2px; /* 稍微圓角會比較好看 */
+}
+
+.bottom{
+    display:flex;
+    height:600px;
+    margin-bottom: 20px;
+    padding:50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.tab > h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
+  /* font-size: 40px; */
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  /* cursor: pointer;  */
+  display: inline;
+}
+
+.tab h2:hover{
+    color: black ;
+    background-color: aquamarine;
+    display: inline;
+}
+
+.word {
+  background: rgba(0,0,0,0.7);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  margin:10px auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab:hover .word{
+  opacity: 1;
+}
+
+
+
+/*RWD 平板 768px*/
+/*1024 px*/
+/*由小到大排比較好 因為大的會需要比較多東西*/
