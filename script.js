@@ -235,3 +235,9 @@ topics.forEach(
 //     let comp = [255-r, 255-g, 255-b];
 //     return rgbToHex(...comp);
 // }
+
+
+// import { gsap } from "gsap";
+gsap.to(".menu", { 
+  x: 200,
+});

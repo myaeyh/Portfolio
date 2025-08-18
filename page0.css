@@ -36,12 +36,13 @@ body.page0 {
 
 .menubox{
   position:sticky;
+  /* position:relative; */
   width:35px;
   height:50px;
   right:50px;
+  top:20px;
 }
 .menubox .icon{
-
   width: 35px;
   height: 5px;
   background-color: white;
@@ -91,8 +92,30 @@ body.page0 {
   opacity: 1;
 }
 
+/*RWD*/
+@media (max-width: 767px) {
+.bottom {
+display: fle;
+flex-direction: column;
+;}
+.menubox{
+  right: 20px;;
+}
+}
 
 
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+body {
+background-color: green;
+}
+}
+
+@media (min-width: 1025px) {
+body {
+background-color: blue;
+}
+} */
 /*RWD 平板 768px*/
 /*1024 px*/
 /*由小到大排比較好 因為大的會需要比較多東西*/

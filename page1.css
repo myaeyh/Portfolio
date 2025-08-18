@@ -50,6 +50,8 @@ body.page1 {
   background-color: rgba(127,255,212,0.9);
   border-radius: 0.2cap;
   padding:50px;
+  overflow:scroll;
+  
 }
 
 .right_bottom p {
