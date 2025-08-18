@@ -95,7 +95,7 @@ body.page0 {
 /*RWD*/
 @media (max-width: 767px) {
 .bottom {
-display: fle;
+display: flex;
 flex-direction: column;
 ;}
 .menubox{
@@ -119,3 +119,4 @@ background-color: blue;
 /*RWD 平板 768px*/
 /*1024 px*/
 /*由小到大排比較好 因為大的會需要比較多東西*/
+
